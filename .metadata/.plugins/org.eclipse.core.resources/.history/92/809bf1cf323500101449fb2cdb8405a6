@@ -1,0 +1,7 @@
+baseUrl=http://jsAdmin:Radixweb8@johnsonscreens-api-uat.live1.dev.radixweb.net/#
+Home=.//*[text()='Home']
+SearchPR=.//input[@placeholder='Search']
+SearchPRBT=.//input[@placeholder='Search']/following-sibling::button
+ViewProjects=.//div[contains(@title,'View Projects')]
+ProjectView=.//datatable-body//button[text()='View Project']
+loader=.//ngx-spinner-overlay ng-tns-c4183080771-0 ng-trigger ng-trigger-fadeIn ng-star-inserted

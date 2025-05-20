@@ -4,4 +4,6 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
     <fullyQualifiedTypeName name="java.time.Duration"/>
     <fullyQualifiedTypeName name="Common.Global"/>
+    <fullyQualifiedTypeName name="Common.WebControls"/>
+    <fullyQualifiedTypeName name="io.netty.handler.timeout.TimeoutException"/>
 </qualifiedTypeNameHistroy>

@@ -10,6 +10,7 @@ public class test12 {
 		// TODO Auto-generated method stub
 		Global.initializeBrowser();
 		Login.login();
+		projectView.project();
 	}
 
 }

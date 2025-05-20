@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;WebControls.java&apos; to &apos;Jhonson/src/Common&apos;&#x0D;&#x0A;- Original project: &apos;Session11&apos;&#x0D;&#x0A;- Destination element: &apos;Jhonson/src/Common&apos;&#x0D;&#x0A;- Original element: &apos;Common.WebControls.java&apos;" description="Copy compilation unit" destination="=Jhonson/src&lt;Common" element1="/src&lt;Common{WebControls.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1747661376112" units="1" version="1.0"/>
+</session>

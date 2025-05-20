@@ -1,0 +1,37 @@
+package Modules;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import Common.Global;
+import Common.WebControls;
+import io.netty.handler.timeout.TimeoutException;
+
+public class projectView {
+	public static void project() throws IOException{
+		 
+	    Global.LoadProperty(".\\Properties\\Login.properties");
+	    
+	    try {
+	        Global.wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".ngx-spinner-overlay")));
+	    } catch (TimeoutException e) {
+	        System.out.println("Spinner did not appear, continuing...");
+	    }
+
+	    // REQUIRED: Wait for spinner to disappear
+	    Global.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".ngx-spinner-overlay")));
+
+	    // Proceed only after spinner is gone
+	    WebElement element = Global.wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='View Project']")));
+	    element.click();
+	    		//(By.xpath(Global.prop.getProperty("loader"))));
+	    Global.driver.findElement(By.xpath(Global.prop.getProperty("ViewProjects"))).click();
+	    //WebControls.Textbox(Global.prop.getProperty("SearchPR"), "Auto Test");
+	    //Global.driver.findElement(By.xpath(Global.prop.getProperty("SearchPRBT"))).click();
+	
+  }
+
+}

@@ -1,0 +1,33 @@
+package Modules;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import Common.Global;
+import Common.WebControls;
+import io.netty.handler.timeout.TimeoutException;
+
+public class projectView {
+	public static void project() throws IOException{
+		 
+	    Global.LoadProperty(".\\Properties\\Login.properties");
+	    
+	    JavascriptExecutor js = (JavascriptExecutor) Global.driver;
+
+	 // Wait until overlay is gone (e.g., has 0 height, or is display: none)
+	 Global.wait.until(driver1 -> {
+	     String script = "return window.getComputedStyle(document.querySelector('ngx-spinner-overlay')).getPropertyValue('display');";
+	     String display = (String) js.executeScript(script);
+	     return display.equals("none");
+	 });
+	   Global.driver.findElement(By.xpath(Global.prop.getProperty("ViewProjects"))).click();
+	    //WebControls.Textbox(Global.prop.getProperty("SearchPR"), "Auto Test");
+	    //Global.driver.findElement(By.xpath(Global.prop.getProperty("SearchPRBT"))).click();
+	
+  }
+
+}

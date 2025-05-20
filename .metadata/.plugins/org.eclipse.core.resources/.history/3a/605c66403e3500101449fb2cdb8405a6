@@ -1,0 +1,27 @@
+package Modules;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import Common.Global;
+import Common.WebControls;
+import io.netty.handler.timeout.TimeoutException;
+
+public class projectView {
+	public static void project() throws IOException{
+		 
+	    Global.LoadProperty(".\\Properties\\Login.properties");
+	    
+	   
+        Global.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("pl__ring-stroke")));
+   
+	   Global.driver.findElement(By.xpath(Global.prop.getProperty("ViewProjects"))).click();
+	    //WebControls.Textbox(Global.prop.getProperty("SearchPR"), "Auto Test");
+	    //Global.driver.findElement(By.xpath(Global.prop.getProperty("SearchPRBT"))).click();
+	
+  }
+
+}

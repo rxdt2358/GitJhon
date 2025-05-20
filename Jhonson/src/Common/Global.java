@@ -33,7 +33,7 @@ public class Global {
 		driver.manage().window().maximize();
 		//wait = new WebDriverWait(driver,30);
 
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
 	}
 
