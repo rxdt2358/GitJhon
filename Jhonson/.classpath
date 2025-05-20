@@ -6,7 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/selenium/selenium-server-4.8.3.jar"/>
 	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/ashot-1.5.2.jar"/>
 	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/bson-3.0.4.jar"/>
 	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/byte-buddy-1.8.15.jar"/>
@@ -44,6 +43,6 @@
 	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/smtp.jar"/>
 	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/xmlbeans-2.6.0.jar"/>
-	<classpathentry kind="lib" path="D:/selenium/selenium-server-standalone-3.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/selenium-server-4.8.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
