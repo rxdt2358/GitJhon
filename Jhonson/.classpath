@@ -6,43 +6,5 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/ashot-1.5.2.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/bson-3.0.4.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/byte-buddy-1.8.15.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/client-combined-3.14.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/client-combined-3.14.0-sources.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/commons-codec-1.9.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/commons-exec-1.3.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/commons-logging-1.1.3.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/extentreports-2.41.2.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/freemarker-2.3.23.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/guava-25.0-jre.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/httpclient-4.5.5.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/httpcore-4.4.9.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/java-client-7.5.1-all.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/javax.activation.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/jsoup-1.8.3.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/junit-4.12.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/log4j-1.2.17.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/mail.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/mongodb-driver-3.0.4.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/mongodb-driver-core-3.0.4.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/okhttp-3.10.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/okio-1.14.1.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/opencsv-3.8.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/poi-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/poi-examples-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/poi-excelant-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/poi-ooxml-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/poi-ooxml-schemas-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/poi-scratchpad-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/pop3.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/rest-assured-3.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/smtp.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/sqlite-jdbc-3.8.11.1.jar"/>
-	<classpathentry kind="lib" path="D:/Automation/Data/POI JarFiles/xmlbeans-2.6.0.jar"/>
-	<classpathentry kind="lib" path="D:/selenium/selenium-server-4.8.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
