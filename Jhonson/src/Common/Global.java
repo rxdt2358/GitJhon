@@ -35,9 +35,9 @@ public class Global {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		// wait = new WebDriverWait(driver,30);
+		wait = new WebDriverWait(driver,30);
 
-		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		//wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
 	}
 
