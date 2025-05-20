@@ -1,13 +1,17 @@
 package Common;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Global {
 	public static WebDriver driver = null;
@@ -31,7 +35,7 @@ public class Global {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		//wait = new WebDriverWait(driver,30);
+		// wait = new WebDriverWait(driver,30);
 
 		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
@@ -45,5 +49,23 @@ public class Global {
 		prop = new Properties();
 		prop.load(fi);
 
+	}
+
+	public static void waitForLoaderToDisappear() {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+
+		// Wait for loader to appear
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".ngx-spinner-overlay")));
+
+		// Wait for it to disappear
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".ngx-spinner-overlay")));
+	}
+
+	public static void clickWhenReady(By locator) {
+		// clickable method for loader
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		waitForLoaderToDisappear(); // Ensure page is stable
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+		element.click();
 	}
 }

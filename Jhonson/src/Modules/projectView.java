@@ -11,30 +11,14 @@ import Common.WebControls;
 import io.netty.handler.timeout.TimeoutException;
 
 public class projectView {
-	public static void project() throws IOException{
-		 
-	    Global.LoadProperty(".\\Properties\\Login.properties");
-	    
-	    Boolean e = Global.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(".//app-root/ngx-spinner/div")));
-	    boolean s = Global.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//div[contains(@title,'View Projects')]"))) != null;
-	    
-	    if(e = true);
-	    {
-	    if(s = true);
-	    {
-	    	Global.driver.findElement(By.xpath(Global.prop.getProperty("ViewProjects"))).click();
-	    }}
-	   // System.out.print(Global.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(Global.prop.getProperty("ViewProjects")))));
-	    
-	    //Global.driver.findElement(By.xpath(Global.prop.getProperty("ViewProjects"))).click();
-	    //WebControls.Textbox(Global.prop.getProperty("SearchPR"), "Auto Test");
-	    //Global.driver.findElement(By.xpath(Global.prop.getProperty("SearchPRBT"))).click();
-	
-  }
+	public static void project() throws IOException {
 
-	private static void If(Boolean until) {
-		// TODO Auto-generated method stub
-		
+		Global.LoadProperty(".\\Properties\\Login.properties");
+		Global.clickWhenReady(By.xpath(".//div[contains(@title,'View Projects')]"));
+		WebControls.Textbox(Global.prop.getProperty("SearchPR"), "Auto Test");
+		Global.clickWhenReady(By.xpath(Global.prop.getProperty("SearchPRBT"))).click();
+		Global.driver.findElement(By.xpath(Global.prop.getProperty("ProjectView"))).click();
+
 	}
 
 }
