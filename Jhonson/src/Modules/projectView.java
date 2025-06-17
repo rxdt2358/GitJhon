@@ -8,13 +8,15 @@ import Common.Global;
 import Common.WebControls;
 
 public class projectView {
-	public static void project() throws IOException {
+	public static void project() throws IOException, InterruptedException {
 
-		Global.LoadProperty(".\\Properties\\Login.properties");
-		Global.clickWhenReady(By.xpath(".//div[contains(@title,'View Projects')]"));
-		WebControls.Textbox(Global.prop.getProperty("SearchPR"), "Auto Test");
-		Global.clickWhenReady(By.xpath(Global.prop.getProperty("SearchPRBT")));
-		Global.driver.findElement(By.xpath(Global.prop.getProperty("ProjectView"))).click();
+		//Global.LoadProperty(".\\Properties\\Login.properties");
+		//Thread.sleep(1000);
+		Global.clickWhenReady(By.xpath(Global.prop.getProperty("viewProjects")));
+		//Global.clickWhenReady(By.xpath(Global.prop.getProperty("searchPR")));
+		WebControls.Textbox(Global.prop.getProperty("searchPR"), "Automation1");
+		Global.driver.findElement(By.xpath(Global.prop.getProperty("searchPRBT"))).click();
+		Global.driver.findElement(By.xpath(Global.prop.getProperty("projectView"))).click();
 
 	}
 

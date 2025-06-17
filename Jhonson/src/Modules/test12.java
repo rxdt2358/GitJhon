@@ -6,7 +6,7 @@ import Common.Global;
 
 public class test12 {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		Global.initializeBrowser();
 		Login.login();
