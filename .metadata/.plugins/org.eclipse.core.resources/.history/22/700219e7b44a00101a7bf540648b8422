@@ -1,0 +1,24 @@
+baseUrl=http://jsAdmin:Radixweb8@johnsonscreens-api-uat.live1.dev.radixweb.net/#
+home=.//*[text()='Home']
+searchPR=.//input[@placeholder='Search']
+searchPRBT=.//input[@placeholder='Search']/following-sibling::button
+viewProjects=.//div[contains(@title,'View Projects')]
+projectView=.//datatable-body//button[text()='View Project']
+loader=.//app-root/ngx-spinner[contains(@class,'ngx-spinner-overlay ng-tns-c4183080771-0 ng-trigger ng-trigger-fadeIn ng-star-inserted')]
+prjTaskTab=.//a[contains(text(),'Project Task')]
+assigntoNew=.//td[contains(text(),'New')][1]//preceding-sibling::td[1]/ng-select
+dDJSAdmin=.//ng-dropdown-panel//span[@title='JS Admin']
+bTNViewTask=.//td[contains(text(),'New')]/following-sibling::td//button
+statusDD=.//app-modal-popup//ng-select[@name='status']
+close=.//app-modal-popup//span[text()='×']
+dDInProcess=.//ng-dropdown-panel//span[@title='In Process']
+btnSave=.//app-modal-popup//button[contains(text(),'Save')]
+lineTab=.//a[contains(text(),'Line Detail')]
+LinePhaseDetail=.//igx-expansion-panel-title[contains(@title,'Line Phase Detail')]/parent::div/following-sibling::div/igx-icon
+approvalPhase=.//igx-expansion-panel-title[contains(@title,'Approval Phase')]/parent::div/following-sibling::div/igx-icon
+updateInproccess=.//td[contains(text(),'In Process')][1]//following-sibling::td[1]//button
+comments=.//a[contains(text(),'Comments')]
+statusHistory=.//a[contains(text(),'Status History')]
+documentHistory=.//a[contains(text(),'Document History')]
+changeHistory=.//a[contains(text(),'Change History')]
+workLog=.//a[contains(text(),'Work Log')]

@@ -6,4 +6,7 @@
     <fullyQualifiedTypeName name="Common.Global"/>
     <fullyQualifiedTypeName name="Common.WebControls"/>
     <fullyQualifiedTypeName name="io.netty.handler.timeout.TimeoutException"/>
+    <fullyQualifiedTypeName name="Modules.projectView"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
 </qualifiedTypeNameHistroy>
