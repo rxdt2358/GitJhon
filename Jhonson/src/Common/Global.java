@@ -3,15 +3,19 @@ package Common;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.time.Duration;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.OutputType;
 
 public class Global {
 	public static WebDriver driver = null;
@@ -35,9 +39,9 @@ public class Global {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		wait = new WebDriverWait(driver,30);
+		wait = new WebDriverWait(driver, 30);
 
-		//wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		// wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
 	}
 
@@ -67,5 +71,13 @@ public class Global {
 		waitForLoaderToDisappear(); // Ensure page is stable
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 		element.click();
+	}
+
+	public static void takeSS() throws Throwable {
+
+		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+		TakesScreenshot scr = ((TakesScreenshot) driver);
+		File Filesrc = scr.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(Filesrc, new File(".\\SS\\" + timestamp + ".jpg"));
 	}
 }
