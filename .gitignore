@@ -1,0 +1,7 @@
+/Jhonson/test-output/old/Default suite/methods.html
+*.sqlite-journal
+/Jhonson/test-output/Default suite/Default test.xml
+/Jhonson/test-output/*.js
+Jhonson/test-output/old/
+.metadata/
+.vs/
