@@ -14,7 +14,7 @@ public class projectView {
 		//Thread.sleep(1000);
 		Global.clickWhenReady(By.xpath(Global.prop.getProperty("viewProjects")));
 		//Global.clickWhenReady(By.xpath(Global.prop.getProperty("searchPR")));
-		WebControls.Textbox(Global.prop.getProperty("searchPR"), "Automation1");
+		WebControls.Textbox(Global.prop.getProperty("searchPR"), "Niagara Refining");
 		Global.driver.findElement(By.xpath(Global.prop.getProperty("searchPRBT"))).click();
 		Global.driver.findElement(By.xpath(Global.prop.getProperty("projectView"))).click();
 
