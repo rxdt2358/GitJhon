@@ -1,0 +1,117 @@
+package Tests;
+
+import org.testng.annotations.Test;
+import Common.Global;
+import Common.WebControls;
+import Modules.Login;
+import Modules.projectView;
+
+import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.annotations.AfterTest;
+
+public class ProjectTask {
+
+  @BeforeTest
+  public void beforeTest() throws Exception {
+	  Global.initializeBrowser();
+	   Login.login();
+  }
+  
+  /*@Test
+  public void TaskAllocation() throws Exception {
+	  projectView.project();
+	  //Global.clickWhenReady(By.xpath(Global.prop.getProperty("PrjTaskTab")));
+	  Global.driver.switchTo().window(Global.driver.getWindowHandles().toArray()[1].toString());
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("prjTaskTab"))).click();
+	  
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("assigntoNew"))).click();
+	  Global.clickWhenReady(By.xpath(Global.prop.getProperty("dDJSAdmin")));
+	  Global.clickWhenReady(By.xpath(Global.prop.getProperty("bTNViewTask")));
+	  
+	  WebElement XX = Global.driver.findElement(By.xpath(Global.prop.getProperty("statusDD")));
+	  
+	  if(XX != null)
+	  {
+		  XX.click();
+		  Global.driver.findElement(By.xpath(Global.prop.getProperty("dDInProcess"))).click();
+		  Global.driver.findElement(By.xpath(Global.prop.getProperty("btnSave"))).click();
+		  Global.driver.findElement(By.xpath(Global.prop.getProperty("close"))).click();
+		  Global.clickWhenReady(By.xpath(Global.prop.getProperty("bTNViewTask")));
+	  }
+	  else
+	  {
+		  Global.driver.findElement(By.xpath(Global.prop.getProperty("close"))).click();
+	  }
+
+  }*/
+  
+  @Test
+  public void LineupTaskAllocation() throws Throwable {
+	  
+	  JavascriptExecutor js = (JavascriptExecutor) Global.driver;
+	  projectView.project();
+	  Global.driver.switchTo().window(Global.driver.getWindowHandles().toArray()[1].toString());
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("lineTab"))).click();
+
+	 
+	  Global.wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//igx-icon"))).click();
+	  
+	  
+	  js.executeScript("window.scrollBy(0,800)", "");
+	  Global.clickWhenReady(By.xpath(Global.prop.getProperty("LinePhaseDetail")));
+	  js.executeScript("window.scrollBy(0,100)", "");
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("approvalPhase"))).click();
+	 // Global.clickWhenReady(By.xpath(Global.prop.getProperty("approvalPhase")));
+	  js.executeScript("window.scrollBy(0,300)", "");
+	  
+	  
+	 /* Global.driver.findElement(By.xpath(Global.prop.getProperty("assigntoNew"))).click();
+	  //Global.driver.findElement(By.xpath(Global.prop.getProperty("dDJSAdmin"))).click();
+	  Global.clickWhenReady(By.xpath(Global.prop.getProperty("dDJSAdmin")));
+	  Global.clickWhenReady(By.xpath(Global.prop.getProperty("bTNViewTask")));
+	  
+	  WebElement XX = Global.driver.findElement(By.xpath(Global.prop.getProperty("statusDD")));
+	  
+	  if(XX != null)
+	  {
+		  XX.click();
+		  Global.driver.findElement(By.xpath(Global.prop.getProperty("dDInProcess"))).click();
+		  Global.driver.findElement(By.xpath(Global.prop.getProperty("btnSave"))).click();
+		  js.executeScript("document.body.style.zoom='80%'");
+		  Global.driver.findElement(By.xpath(Global.prop.getProperty("close"))).click();
+		  Global.clickWhenReady(By.xpath(Global.prop.getProperty("bTNViewTask")));
+	  }
+	  else
+	  {
+		  Global.driver.findElement(By.xpath(Global.prop.getProperty("close"))).click();
+	  }*/
+	  
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("updateInproccess"))).click();
+	  Global.clickWhenReady(By.xpath(Global.prop.getProperty("btnLogHr")));
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("hours"))).click();
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("time"))).click();
+	  WebControls.Textbox(Global.prop.getProperty("hourComment"), "Automation Test");
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("logSubmit"))).click();
+	  js.executeScript("window.scrollBy(0,500)", "");
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("comments"))).click();
+	  Global.takeSS();
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("statusHistory"))).click();
+	  Global.takeSS();
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("documentHistory"))).click();
+	  Global.takeSS();
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("changeHistory"))).click();
+	  Global.takeSS();
+	  Global.driver.findElement(By.xpath(Global.prop.getProperty("workLog"))).click();
+	  Global.takeSS();
+	  
+  }
+
+  @AfterTest
+  public void afterTest() {
+  }
+
+}

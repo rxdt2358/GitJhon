@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="LineupTaskAllocation"/>
+          <include name="LineupReviewTask"/>
         </methods>
       </class> <!-- Tests.ProjectTask -->
     </classes>

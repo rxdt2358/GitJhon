@@ -9,17 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,311</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">18,066</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.ProjectTask</td><td><a href="#m0">LineupTaskAllocation</a></td><td rowspan="1">1750081508001</td><td rowspan="1">8841</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.ProjectTask</td><td><a href="#m0">LineupReviewTask</a></td><td rowspan="1">1750844597141</td><td rowspan="1">14744</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Tests.ProjectTask#LineupTaskAllocation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-ng-c1913043755=&quot;&quot;&gt;...&lt;/span&gt; is not clickable at point (573, 294). Other element would receive the click: &lt;input aria-autocomplete=&quot;list&quot; type=&quot;text&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; autocomplete=&quot;a2997e6d9bc1&quot;&gt;
-  (Session info: chrome=137.0.7151.104)
+<h2>Default test</h2><h3 id="m0">Tests.ProjectTask#LineupReviewTask</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//ng-dropdown-panel//span[@title=&apos;In Process&apos;]&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
 System info: host: &apos;LAPN212211&apos;, ip: &apos;192.168.103.14&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\DIYA~1.PAN\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50239}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7ad6af5d7c69af0f9badef1c439c0e61
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\DIYA~1.PAN\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e908642462c8d739d4f0a19f601c728a
+*** Element info: {Using=xpath, value=.//ng-dropdown-panel//span[@title=&apos;In Process&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -31,9 +33,11 @@ Session ID: 7ad6af5d7c69af0f9badef1c439c0e61
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Tests.ProjectTask.LineupTaskAllocation(ProjectTask.java:95)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Tests.ProjectTask.LineupReviewTask(ProjectTask.java:104)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

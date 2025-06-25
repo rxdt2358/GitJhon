@@ -2,34 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-16T19:15:04 IST" name="Default suite" finished-at="2025-06-16T19:15:16 IST" duration-ms="12311">
+  <suite started-at="2025-06-25T15:13:13 IST" name="Default suite" finished-at="2025-06-25T15:13:31 IST" duration-ms="18066">
     <groups>
     </groups>
-    <test started-at="2025-06-16T19:15:04 IST" name="Default test" finished-at="2025-06-16T19:15:16 IST" duration-ms="12311">
+    <test started-at="2025-06-25T15:13:13 IST" name="Default test" finished-at="2025-06-25T15:13:31 IST" duration-ms="18066">
       <class name="Tests.ProjectTask">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests.ProjectTask@10d307f1]" started-at="2025-06-16T19:15:04 IST" name="beforeTest" finished-at="2025-06-16T19:15:07 IST" duration-ms="3422" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests.ProjectTask@10d307f1]" started-at="2025-06-25T15:13:13 IST" name="beforeTest" finished-at="2025-06-25T15:13:17 IST" duration-ms="3278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="LineupTaskAllocation()[pri:0, instance:Tests.ProjectTask@10d307f1]" started-at="2025-06-16T19:15:08 IST" name="LineupTaskAllocation" finished-at="2025-06-16T19:15:16 IST" duration-ms="8841" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="LineupReviewTask()[pri:0, instance:Tests.ProjectTask@10d307f1]" started-at="2025-06-25T15:13:17 IST" name="LineupReviewTask" finished-at="2025-06-25T15:13:31 IST" duration-ms="14744" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <span _ngcontent-ng-c1913043755="">...</span> is not clickable at point (573, 294). Other element would receive the click: <input aria-autocomplete="list" type="text" autocorrect="off" autocapitalize="off" autocomplete="a2997e6d9bc1">
-  (Session info: chrome=137.0.7151.104)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":".//ng-dropdown-panel//span[@title='In Process']"}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
 System info: host: 'LAPN212211', ip: '192.168.103.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\DIYA~1.PAN\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50239}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7ad6af5d7c69af0f9badef1c439c0e61]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\DIYA~1.PAN\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e908642462c8d739d4f0a19f601c728a
+*** Element info: {Using=xpath, value=.//ng-dropdown-panel//span[@title='In Process']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span _ngcontent-ng-c1913043755="">...</span> is not clickable at point (573, 294). Other element would receive the click: <input aria-autocomplete="list" type="text" autocorrect="off" autocapitalize="off" autocomplete="a2997e6d9bc1">
-  (Session info: chrome=137.0.7151.104)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//ng-dropdown-panel//span[@title='In Process']"}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
 System info: host: 'LAPN212211', ip: '192.168.103.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\DIYA~1.PAN\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50239}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7ad6af5d7c69af0f9badef1c439c0e61
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\DIYA~1.PAN\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e908642462c8d739d4f0a19f601c728a
+*** Element info: {Using=xpath, value=.//ng-dropdown-panel//span[@title='In Process']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -41,9 +45,11 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at Tests.ProjectTask.LineupTaskAllocation(ProjectTask.java:95)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at Tests.ProjectTask.LineupReviewTask(ProjectTask.java:104)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,11 +80,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LineupTaskAllocation -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Tests.ProjectTask@10d307f1]" started-at="2025-06-16T19:15:16 IST" name="afterTest" finished-at="2025-06-16T19:15:16 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- LineupReviewTask -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Tests.ProjectTask@10d307f1]" started-at="2025-06-25T15:13:31 IST" name="afterTest" finished-at="2025-06-25T15:13:31 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
